@@ -16,6 +16,8 @@ longest = ''
 
 for p2 in range (1, length):
   if ord(s[p2]) >= ord(s[p2 - 1]):
+    if len(s[p1:p2 + 1]) > len(longest):
+        longest = s[p1:p2 + 1]
     continue
   elif len(s[p1:p2]) > len(longest):
     longest = s[p1:p2]
